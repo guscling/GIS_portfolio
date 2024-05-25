@@ -2,24 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>August Clingroth GIS Portfolio</title>
-</head>
-<h1>August Clingroth <br>August Clingroth's GIS Portfolio</h1>
-<h2>Assosrtment of Assignments from UNC-Chapel Hill</h2>
-<h1>Class of 2024</h1>
-<a href="https://guscling.github.io/geog456/Assignments/Assignment1.html">Assignment 1</a>
-<a href="https://guscling.github.io/geog456/Assignments/Assignment2.html">Assignment 2</a>
-<a href="https://guscling.github.io/geog456/Assignments/Assignment4.html">Assignment 4</a>
-<a href="https://guscling.github.io/geog456/Assignments/Assignment5.html">Assignment 5</a>
-<a href="https://guscling.github.io/geog456/Assignments/Assignment6.html">Assignment 6</a>
-<a href="https://guscling.github.io/geog456/Assignments/Assignment7.html">Assignment 7</a>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .project {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            overflow:hidden;
+        }
+        .project img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
 
-<h2>Assessments</h2>
-<a href="https://guscling.github.io/geog456/Assessments/Assessment1.html">Assessment 1</a>
-<a href="https://guscling.github.io/geog456/Assessments/Assessment2.html">Assessment 2</a>
+        }
+        .project-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align:initial;
+        }
+        .project-info h3 {
+            margin: 0;
+            text-align: center;
+        }
+        .project-info p {
+            display: none;
+            margin: 5px 0 0;
+        }
+        .project:hover .project-info p {
+            display: block;
+        }
+        .project:hover .project-info h3 {
+            color: lightblue;
+        }
+        .blue-div {
+            width: 100%;
+            height: 100px;
+            background-color: #73bed7; /* Light blue color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border: 1px solid #888; /* Border for better definition */
+            border-radius: 8px; /* Rounded corners */
+            margin: 20px auto; /* Center horizontally with some margin */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color:whitesmoke;
+        }
+        #portfolio-info{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: -50px;
+        }
+    </style>
+    </style>
+</head>
 <body>
-    
+    <div class="blue-div">
+        <h1>August Clingroth GIS Portfolio</h1>
+</div>
+    <h2 style="text-align: center";>About me</h2>
+    <h4 style="text-align: center; font-size: larger; margin-left: 50px; margin-right: 50px; color: #73bed7;">I am a 2024 Graduate from UNC-Chapel Hill. Having studied political science, sustainability, and global issues, over the last two years I have been using GIS as an analysis and visualization tool within these disciplines.</h4>
+   <div id='portfolio-info'><h2>Portfolio</h2>
+    <h4 style="font-size: larger; margin-left: 50px; margin-right: 50px; color:#73bed7;">Below is a selection of works from my time at UNC that demonstrate my range of experience with GIS softwares, analysis, and visualization. Projects are listed from most recent to oldest. Click each one for more information.</h4>
+</div>
+    <div class="portfolio">
+        <a href="./Migration map.png" class="project">
+            <img src="./Migration map.png" alt="Migration Map">
+            <div class="project-info">
+                <h3>Is Public Opinion of Migration Impacted by the Number of Asylum Seekers in the EU?</h3>
+                <p>Map analyzing the relationship between European public opinion of migration and the number of asylum applicants since 2014. <i>Leaflet-based web map.</i></p>
+            </div>
+        </a>
+        <a href="./CAFO maps.png" class="project">
+            <div class="project-info">
+                <h3>Mapping the Relationship between NC CAFOs and Social Vulnerability</h3>
+                <p>Several maps and graphs showing the relationship between SVI index and the presence of CAFOs in North Carolina. <i>Maps created with ArcGIS and graphs with R.</i></p>
+            </div>
+        </a>
+        <a href="./Chernobyl layout.png" class="project">
+            <img src="./Chernobyl layout.png" alt="Chornobyl Map">
+            <div class="project-info">
+                <h3>Comparing Chornobyl Exclusion Zones</h3>
+                <p>Map comparing the original and current Chornobyl Exclusions Zones. <i>Map layout created with QGIS.</i></p>
+            </div>
+        </a>
+        <a href="./Europe Emissions Map.png" class="project">
+            <img src="./Europe Emissions Map.png" alt="Emissions Goal Map">
+            <div class="project-info">
+                <h3>Percent Change in Emissions in EU Countries since 1990</h3>
+                <p>Choropleth showing the percent change in greenhouse gas emissions in EU countries since 1990. <i>Map layout created with QGIS.</i></p>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
