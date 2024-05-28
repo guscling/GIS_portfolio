@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAFO Map</title>
+    <title>Chornobyl Map</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,7 +27,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border: 1px solid #888;
             border-radius: 8px;
-            display:flex;
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -42,7 +42,7 @@
             margin-bottom: 10px;
         }
         .header span {
-            font-size: 17px;
+            font-size: 17px; /* Adjust the font size as needed */
         }
         h1 {
             color: #333;
@@ -60,35 +60,6 @@
         }
         a:hover {
             text-decoration: underline;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center; /* Center items horizontally */
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            margin-right: 10px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            display: none; /* Initially hide all images */
-        }
-        .image-container img:first-child {
-            display: block; /* Display the first image initially */
-        }
-        .btn-container {
-            margin-bottom: 20px;
-        }
-        .btn-container button {
-            margin-right: 10px;
-            padding: 8px 16px;
-            background-color: #73bed7;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
         }
         #map {
             height: auto;
@@ -119,30 +90,11 @@
         <span>UNC-Chapel Hill 2023</span>
     </div>
     <div class="container">
-        <div class="image-container">
-            <img src="./CAFO maps.png" alt="CAFO Map" id="cafoMap">
-            <img src="./graph1.png" alt="Graph 1" id="graph1">
-            <img src="./graph2.png" alt="Graph 2" id="graph2">
-        </div>
-        <div class="btn-container">
-            <button onclick="showImage('cafoMap')">CAFO Map</button>
-            <button onclick="showImage('graph1')">Graph 1</button>
-            <button onclick="showImage('graph2')">Graph 2</button>
-        </div>
-        <h4>Created as part of a geospatial analysis course at UNC-Chapel Hill, these maps and graphs come from a project analyzing whether feedlots (CAFOs) in North Carolina are more concentrated in socially vulnerable areas. The CAFO data from the NC DEQ while the social vulnerability data came from the CDC's social vulnerability index. The maps were completed in ArcGIS Pro while the graphs as well as the data cleaning were done with R.<br><br>
+        <a href="./CAFO maps.png" class="map">
+            <img src="./CAFO maps.png" alt="Migration Map" id="map">
+        </a>
+        <h4>Created as part of a geospatial analysis course at UNC-Chapel Hill, these maps and graphs come from a project analyzing whether feedlots (CAFOs) in North Carolina are more concentrated in socially vulnerable areas. The CAFO data from the NC DEQ while the social vulnerability data came from the CDC's social vulnerability index. After finding the raw data, using Microsoft Excel and R I prepared each dataset for analysis by removing superfluous data, adding additional information, and ensuring that each dataset was strucutred the same to join them. The maps were completed with analysis in ArcGIS Pro.<br><br>
     </div>
-
-    <script>
-        function showImage(imageId) {
-            var images = document.querySelectorAll('.image-container img');
-            images.forEach(function(img) {
-                if (img.id === imageId) {
-                    img.style.display = 'block';
-                } else {
-                    img.style.display = 'none';
-                }
-            });
-        }
-    </script>
 </body>
 </html>
+
