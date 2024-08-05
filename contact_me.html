@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title></head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.blue-div {
+        width: 100%;
+        height: 100px;
+        background-color: #73bed7; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border: 1px solid #888; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 250px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: whitesmoke;
+    }
+    .blue-div h1 {
+        margin: 0;
+        font-size: 7mm;
+    }
+.topnav {
+    display: flex;
+    background-color: rgb(87, 177, 206);
+    overflow: hidden;
+    justify-content: center;
+}
+.topnav {
+        display: flex;
+        background-color: rgb(87, 177, 206);
+        overflow: hidden;
+    }
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .topnav a.active {
+        background-color: #7e8a86;
+        color: white;
+    }
+#contact-info {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#headshot img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#blurb {
+    text-align: center;
+    font-size: larger;
+    margin: 20px 50px;
+    color: #73bed7;
+    line-height: 1.6;
+}
+#contact-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#contact-links a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #73bed7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#contact-links a:hover {
+    background-color: #5a99b5;
+}
+
+@media (max-width: 1270px) {
+    .blue-div {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .blue-div h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .topnav {
+        justify-content: center;
+    }
+    .topnav a {
+        float: none;
+        padding: 10px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+</style>
+<body>
+    <div class="blue-div">
+        <h1>Gus Clingroth's GIS Portfolio</h1>
+        <div class="topnav">
+            <a class="active" href="https://guscling.github.io/GIS_portfolio/">Home</a>
+            <a href="https://guscling.github.io/GIS_portfolio/About_me.html">About Me</a>
+            <a href="Clingroth-August-Standard-Resume.pdf" target="_blank" >Resume</a>
+            <a href="guscling.github.io/GIS_portfolio/contact_me.html">Contact</a>
+        </div>
+    </div>
+    <div id="contact-info">
+        <div id="headshot">
+            <img src="headshot.jpg" alt="Your Headshot" />
+        </div>
+        <div id="blurb">
+            <h2>Get in Touch</h2>
+            <p>If you would like to get in touch, feel free to reach out via email or Linkedin.<br>Email: augustclingroth@gmail.com<br></p>
+        </div>
+        <div id="contact-links">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="Clingroth-August-Standard-Resume.pdf" target="_blank">Resume</a>
+            <a href="mailto:augustclingroth@gmail.com">Email</a>
+        </div>
+    </div>
+</body>
+</html>
