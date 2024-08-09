@@ -86,16 +86,6 @@
             margin-bottom: -100px;
             text-align: center;
         }
-        #about-me {
-            max-width: 800px;
-            background-color: white;
-            padding: 25px;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            display: flex;
-        }
         .topnav {
             display: flex;
             background-color: rgb(87, 177, 206);
@@ -117,22 +107,42 @@
             background-color: #7e8a86;
             color: white;
         }
+        #about-me {
+            max-width: 800px;
+            background-color: white;
+            padding: 25px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            text-align: left;
+        }
+        #name-blurb {
+            flex: 1;
+            text-align: center;
+        }
         #headshot {
-            height: 30%;
-            width: 30%;
-            float: left;
-            margin-top: 30px;
+            height: 200px;
+            width: 200px;
+            margin-right: 20px; /* Move the headshot to the left with a margin to the right */
+            border-radius: 50%;
+        }
+        #name {
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 100%;
         }
         #blurb {
-            text-align: center;
             font-size: larger;
-            margin-left: 50px;
-            margin-right: 50px;
             color: #73bed7;
             line-height: 1.6;
-            float: left;
+            text-align: left;
+            max-width: 800px;
+            margin: 0;
         }
-
         @media (max-width: 1270px) {
             .blue-div {
                 height: auto;
@@ -164,13 +174,17 @@
             <a class="active" href="https://guscling.github.io/GIS_portfolio/">Home</a>
             <a href="https://guscling.github.io/GIS_portfolio/About_me.html">About Me</a>
             <a href="Clingroth-August-Standard-Resume.pdf" target="_blank" >Resume</a>
-            <a href="guscling.github.io/GIS_portfolio/contact_me.html">Contact</a>
+            <a href="https://guscling.github.io/GIS_portfolio/contact_me">Contact</a>
         </div>
     </div>
     <div id="about-me">
         <img src="./headshot.jpg" id="headshot">
-        <h4 id="blurb">I am a 2024 graduate from University of North Carolina at Chapel Hill looking for employment in geospatial analysis and visualization. I am particularly interested in GIS applications within political and environmental science (sustainability), and am constantly exploring ways to improve my GIS skills and learn more. <br>Click <a href="#portfolio-info">here</a> to view my selected portfolio of works. Click <a href="https://guscling.github.io/GIS_portfolio/contact_me">here</a> to contact me.</h4>
+        <div id="name-blurb">
+            <h2 id="name">Welcome</h2>
+            <h4 id="blurb">I am a 2024 graduate from University of North Carolina at Chapel Hill looking for employment in geospatial analysis and visualization. I am particularly interested in GIS applications within political and environmental science (sustainability), and am constantly exploring ways to improve my GIS skills and learn more. <br><br>Click <a href="#portfolio-info">here</a> to view my selected portfolio of works. Click <a href="https://guscling.github.io/GIS_portfolio/contact_me">here</a> to contact me.</h4>
+        </div>
     </div>
+    
     <div id='portfolio-info'>
         <h1 style="margin-left: 50px; margin-right: 40px; color:rgb(6, 80, 126);">GIS Portfolio</h1>
     </div>
